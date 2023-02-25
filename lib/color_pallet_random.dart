@@ -55,25 +55,27 @@ class _Color_Pallet_RandomState extends State<Color_Pallet_Random> {
               ),
               Container(
                 width: 80,
-                height: 300,
+                height: 350,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(15)),
-                  color: Colors.teal,),
+                  color: Colors.teal,border: Border.all(color: Colors.black)),
                 child: Column(
+                  //crossAxisAlignment: CrossAxisAlignment.stretch,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Expanded(child: Pallet(colors[a])),
-                    Expanded(child: Pallet(colors[b])),
-                    Expanded(child: Pallet(colors[c])),
-                    Expanded(child: Pallet(colors[d])),
-                    Expanded(child: Pallet(colors[e])),
-                    Expanded(child: Pallet(colors[f])),
+                    // Expanded(child: Pallet(colors[a])),
+                    // Expanded(child: Pallet(colors[b])),
+                    // Expanded(child: Pallet(colors[c])),
+                    // Expanded(child: Pallet(colors[d])),
+                    // Expanded(child: Pallet(colors[e])),
+                    // Expanded(child: Pallet(colors[f])),
 
-                    // Pallet(colors[b]),
-                    // Pallet(colors[b]),
-                    // Pallet(colors[c]),
-                    // Pallet(colors[d]),
-                    // Pallet(colors[e]),
-                    // Pallet(colors[f]),
+                    Pallet(colors[a]),
+                    Pallet(colors[b]),
+                    Pallet(colors[c]),
+                    Pallet(colors[d]),
+                    Pallet(colors[e]),
+                    Pallet(colors[f]),
                   ],
                 ),
               ), //Color Pallet
@@ -154,7 +156,7 @@ class _Color_Pallet_RandomState extends State<Color_Pallet_Random> {
   {
     return Container(
       height: 40,
-      width: 75,
+      width: double.infinity,
       color: c1,
     );
   }
